@@ -1,0 +1,9 @@
+namePrefix: dev-
+namespace: development
+
+resources:
+  - ../../base
+
+images:
+- name: nginx
+  newTag: 1.23.2

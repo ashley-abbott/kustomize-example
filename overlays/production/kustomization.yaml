@@ -1,0 +1,13 @@
+namePrefix: prod-
+namespace: production
+
+resources:
+  - ../../base
+  - ./hpa.yaml
+
+patchesStrategicMerge:
+  - ./patch_deploy_resources.yaml
+
+images:
+- name: nginx
+  newTag: 1.22.1
