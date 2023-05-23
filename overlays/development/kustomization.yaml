@@ -1,7 +1,7 @@
 namePrefix: dev-
 namespace: development
 
-resources:
+bases:
   - ../../base
 
 images:

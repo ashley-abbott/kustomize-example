@@ -1,8 +1,10 @@
 namePrefix: prod-
 namespace: production
 
-resources:
+bases:
   - ../../base
+
+resources:
   - ./hpa.yaml
 
 patchesStrategicMerge:
